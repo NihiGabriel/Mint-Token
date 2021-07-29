@@ -1,0 +1,27 @@
+{
+  "name": "nft",
+  "version": "1.0.0",
+  "description": "my first nft",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "yarn compile --force && npx hardhat test",
+    "debug": "DEBUG=true yarn compile --force && npx hardhat test"
+  },
+  "author": "Nihi",
+  "license": "MIT",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^3.4.0"
+  },
+  "ethers": "^5.4.2",
+  "hardhat": "^2.5.0",
+  "@nomiclabs/hardhat-ethers": "^2.0.2",
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.1.1",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "hardhat": "^2.5.0"
+  }
+}
