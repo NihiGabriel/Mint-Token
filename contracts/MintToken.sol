@@ -7,12 +7,12 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 // Accessing the Ownable method ensures that only the creator of the smart contract can interact with it
-contract TorNFT is ERC721, Ownable {
+contract MitNFT is ERC721, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
     // the name and symbol for the NFT
-    constructor() public ERC721("TheOsunRiver", "TOR") {}
+    constructor() public ERC721("MintToken", "MOT") {}
 
     // Create a function to mint/create the NFT
    // receiver takes a type of address. This is the wallet address of the user that should receive the NFT minted using the smart contract

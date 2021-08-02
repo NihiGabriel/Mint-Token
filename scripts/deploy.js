@@ -3,11 +3,11 @@ async function main() {
   console.log("Deploying contracts with the account:", deployer.address);
 
   console.log("Account balance:", (await deployer.getBalance()).toString());
-  const TOR = await ethers.getContractFactory("TorNFT");
+  const MIT = await ethers.getContractFactory("MitNFT");
 
   // Start deployment, returning a promise that resolves to a contract object
-  const tor = await TOR.deploy();
-  console.log("Contract deployed to address:", tor.address);
+  const mit = await MIT.deploy();
+  console.log("Contract deployed to address:", mit.address);
 }
 
 main()
